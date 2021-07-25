@@ -16,7 +16,7 @@
           <li class="navigation__item"><a href="#">конкурс</a></li>
           <li class="navigation__item"><a href="https://htmlacademy.ru/intensive/adaptive">html academy</a></li>
         </ul>
-        <button><span>закрыть меню</span></button>
+        <button class="navigation__toggle" type="button"><span>закрыть меню</span></button>
       </div>
     </header>
 
@@ -29,8 +29,8 @@
         <div class="promo__button"><a href="https://www.apple.com/ru/app-store/" target="_blank">скачать приложение</a></div>
         <ul class="promo__list">
           <li class="promo__item promo__item--current"><a href="https://www.apple.com/ru/app-store/" target="_blank">iPhone</a></li>
-          <li class="promo__item"><a href="#" target="_blank">Android</a></li>
-          <li class="promo__item"><a href="#" target="_blank">Windows</a></li>
+          <li class="promo__item"><a href="https://play.google.com/store/apps" target="_blank">Android</a></li>
+          <li class="promo__item"><a href="https://www.microsoft.com/ru-ru" target="_blank">Windows</a></li>
         </ul>
         <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
@@ -67,14 +67,19 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__list slider">
-          <blockquote class="reviews__item slider__item">
-            <cite>Николай Петров</cite>
-            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <blockquote class="reviews__item review slider__item">
+            <cite class="review__author-name">Николай Петров</cite>
+            <p class="review__author-details">25 лет, водитель трамвая</p>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
+          <div class="slider__breadcrumbs breadcrumbs">
+            <button class="breadcrumbs__item breadcrumbs__item--current" type="button">кнопка1</button>
+            <button class="breadcrumbs__item" type="button">кнопка2</button>
+            <button class="breadcrumbs__item" type="button">кнопка3</button>
+          </div>
           <div class="slider__controls controls">
-            <button class="controls__item controls__item--current">кнопка1</button>
-            <button class="controls__item">кнопка2</button>
-            <button class="controls__item">кнопка3</button>
+            <button class="controls__item" type="button" aria-label="назад"></button>
+            <button class="controls__item" type="button" aria-label="вперед"></button>
           </div>
         </div>
       </section>
@@ -103,7 +108,7 @@
             </tr>
           </table>
 
-          <table class="tariffs__item slider__item tariff">
+          <table class="tariffs__item slider__item slider__item--current tariff">
             <tr class="tariff__header tariff__header--hit">
               <th colspan="2">
                 <h3 class="tariff__title">стандарт</h3>
@@ -145,11 +150,13 @@
             </tr>
           </table>
 
-          <div class="slider__controls controls">
-            <button class="controls__item controls__item--current">кнопка1</button>
-            <button class="controls__item">кнопка2</button>
-            <button class="controls__item">кнопка3</button>
+          <div class="slider__breadcrumbs breadcrumbs">
+            <button class="breadcrumbs__item" type="button">кнопка1</button>
+            <button class="breadcrumbs__item breadcrumbs__item--current" type="button">кнопка2</button>
+            <button class="breadcrumbs__item" type="button">кнопка3</button>
           </div>
+
+
         </div>
       </section>
       <section class="contacts">
@@ -171,6 +178,9 @@
             <p>Приезжайте в гости:</p>
             <address>ул. Большая Конюшенная, 19/8</address>
           </div>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779395!2d30.3212883164097!3d59.938797481876186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1627192238095!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
     </main>
