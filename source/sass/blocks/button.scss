@@ -1,0 +1,21 @@
+.button {
+  background-color: $color-button;
+  color: $white;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 1px;
+  border: 2px solid $color-button;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-button-hover;
+    border: 2px solid $color-button-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

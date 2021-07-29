@@ -1,0 +1,36 @@
+.form__section {
+  @include reset;
+  border: none;
+}
+
+.form__legend {
+  color: $color-accent;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__section-wrapper {
+  background-color: $grey;
+}
+
+.form__input-label {
+  font-weight: normal;
+}
+
+.form__input-label--text {
+  color: $color-accent;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.form__input-label--checkbox {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form__button {
+  width: 100%;
+}
