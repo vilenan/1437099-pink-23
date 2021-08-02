@@ -1,0 +1,28 @@
+.card__author {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.card__data {
+  font-weight: light;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.card__rating {
+  text-transform: uppercase;
+  color: $color-accent;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.card__content {
+  background-color: $grey;
+  padding: 17px 25px 10px;
+}
+
+.card__image img {
+  display: block;
+}
