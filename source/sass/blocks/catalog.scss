@@ -1,0 +1,8 @@
+.catalog__list {
+  @include reset;
+  margin-top: 20px;
+}
+
+.catalog__item:not(:last-child) {
+  margin-bottom: 20px;
+}
