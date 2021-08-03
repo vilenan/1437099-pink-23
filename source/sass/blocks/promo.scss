@@ -1,24 +1,107 @@
 .promo {
   background-color: $color-main;
+  color: $white;
+
+  @media (min-width: $table-width) {
+    position: relative;
+  }
+}
+
+.promo__intro {
   background-image: url("../img/promo-background-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  color: $white;
+  background-size: cover;
+  padding-top: 95px;
+
+  @media (min-width: $table-width) {
+    height: 545px;
+  }
+}
+
+.promo__content {
+  padding-bottom: 38px;
+
+  @media (min-width: $table-width) {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .promo__list {
   @include reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 38px;
+  padding-right: 38px;
+  margin-top: 38px;
+  margin-bottom: 31px;
+}
+
+.promo__button {
+  margin-top: 28px;
 }
 
 .promo__link {
+  display: block;
+  width: 100%;
   color: $white;
+  background-color: transparent;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+  border: 3px solid $white;
+  border-radius: 29px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+
+  &:hover {
+    background-color: $white;
+    color: $color-accent;
+  }
+
+  &:active {
+    color: $color-accent-light;
+  }
+
 }
 
 .promo__details {
   font-weight: light;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+.promo__image {
+  display: flex;
+}
+
+.promo__image--iphone {
+  background-image: url("../img/apple-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 56px;
+}
+
+.promo__image--android {
+  background-image: url("../img/android-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 47px;
+}
+
+.promo__image--windows {
+  background-image: url("../../img/microsoft-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 41px;
 }

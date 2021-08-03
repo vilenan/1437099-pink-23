@@ -1,4 +1,15 @@
 .header {
-  background-color: $black-lighten;
+  // background-color: $black-lighten;
+  background-color: $color-main;
   color: $white;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__logo-image {
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  fill: $white;
 }

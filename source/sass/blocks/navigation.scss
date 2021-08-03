@@ -3,10 +3,14 @@
 }
 
 .navigation__link {
+  display: block;
   color: $white;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
   text-decoration: none;
   text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
 }
