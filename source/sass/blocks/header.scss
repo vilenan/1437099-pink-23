@@ -2,9 +2,17 @@
   // background-color: $black-lighten;
   background-color: $color-main;
   color: $white;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
+
+  // position: absolute;
+  // z-index: 1;
+
+}
+
+.header__wrapper {
+  @media(min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__logo-image {

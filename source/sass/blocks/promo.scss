@@ -4,8 +4,21 @@
 
   @media (min-width: $table-width) {
     position: relative;
+    background-image: url("../img/promo-background-tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
+
+// .promo__wrapper {
+//   padding-bottom: 38px;
+
+//   @media (min-width: $table-width) {
+//     width: 340px;
+//     padding-bottom: 119px;
+//   }
+// }
 
 .promo__intro {
   background-image: url("../img/promo-background-mobile.jpg");
@@ -15,18 +28,40 @@
   padding-top: 95px;
 
   @media (min-width: $table-width) {
-    height: 545px;
+    background-image: none;
+    background-color: transparent;
+    padding-top: 212px;
   }
 }
 
-.promo__content {
-  padding-bottom: 38px;
+.promo__slogan {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 38px;
+  margin-top: 0;
+}
+
+.promo__image {
 
   @media (min-width: $table-width) {
-    width: 300px;
     position: absolute;
     bottom: 0;
+    right: 0;
   }
+}
+
+.promo__image img {
+  display: block;
+}
+
+.promo__content {
+  // padding-bottom: 38px;
+
+  // @media (min-width: $table-width) {
+  //   width: 300px;
+  //   position: absolute;
+  //   bottom: 0;
+  // }
 }
 
 .promo__list {
@@ -78,11 +113,11 @@
   margin: 0;
 }
 
-.promo__image {
+.promo__logo {
   display: flex;
 }
 
-.promo__image--iphone {
+.promo__logo--iphone {
   background-image: url("../img/apple-logo.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -90,7 +125,7 @@
   height: 56px;
 }
 
-.promo__image--android {
+.promo__logo--android {
   background-image: url("../img/android-logo.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -98,7 +133,7 @@
   height: 47px;
 }
 
-.promo__image--windows {
+.promo__logo--windows {
   background-image: url("../../img/microsoft-logo.svg");
   background-position: center;
   background-repeat: no-repeat;

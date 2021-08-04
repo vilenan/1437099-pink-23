@@ -10,7 +10,7 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="container">
+      <div class="header__wrapper container">
         <div class="header__logo">
           <a class="header__logo-image">
             <svg width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg">
@@ -22,22 +22,22 @@
           </a>
         </div>
         <div class="header__navigation navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link">главная</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html"> фотографии</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="form.html">конкурс</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">html academy</a>
-            </li>
-          </ul>
-          <button class="navigation__toggle" type="button" aria-label="закрыть меню"><span>закрыть меню</span></button>
-        </div>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link">главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html"> фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">html academy</a>
+          </li>
+        </ul>
+        <button class="navigation__toggle" type="button" aria-label="закрыть меню"><span>закрыть меню</span></button>
+      </div>
       </div>
     </header>
 
@@ -46,29 +46,32 @@
 
       <section class="promo">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <div class="promo__intro intro">
-          <div class="container">
-            <p class="intro__slogan slogan">Взгляните на жизнь иначе!</p>
+
+          <div class="promo__intro">
+            <p class="promo__slogan slogan">Взгляните на&nbspжизнь иначе!</p>
+            <picture class="promo__image">
+              <source media="(min-width: 660px)" srcset="img/promo-image-tablet.png">
+              <img src="img/promo-image-mobile.png" alt="телефон с установленным приложением">
+            </picture>
           </div>
-          <img class="intro__image" src="img/promo-image-mobile.png" width="320" height="286" alt="телефон с установленным приложением">
-        </div>
-        <div class="promo__content container">
-          <div class="promo__button">
-            <a class="promo__link" href="https://www.apple.com/ru/app-store/" target="_blank">Cкачать приложение</a>
+          <div class="promo__content">
+            <div class="promo__button">
+              <a class="promo__link" href="https://www.apple.com/ru/app-store/" target="_blank">Cкачать приложение</a>
+            </div>
+            <ul class="promo__list">
+              <li class="promo__item promo__item--current">
+                <a class="promo__logo promo__logo--iphone" href="https://www.apple.com/ru/app-store/" target="_blank"><span class="visually-hidden">iPhone</span></a>
+              </li>
+              <li class="promo__item">
+                <a class="promo__logo promo__logo--android" href="https://play.google.com/store/apps" target="_blank"><span class="visually-hidden">Android</span></a>
+              </li>
+              <li class="promo__item">
+                <a class="promo__logo promo__logo--windows" href="https://www.microsoft.com/ru-ru" target="_blank"><span class="visually-hidden">Windows</span></a>
+              </li>
+            </ul>
+            <p class="promo__details">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-          <ul class="promo__list">
-            <li class="promo__item promo__item--current">
-              <a class="promo__image promo__image--iphone" href="https://www.apple.com/ru/app-store/" target="_blank"><span class="visually-hidden">iPhone</span></a>
-            </li>
-            <li class="promo__item">
-              <a class="promo__image promo__image--android" href="https://play.google.com/store/apps" target="_blank"><span class="visually-hidden">Android</span></a>
-            </li>
-            <li class="promo__item">
-              <a class="promo__image promo__image--windows" href="https://www.microsoft.com/ru-ru" target="_blank"><span class="visually-hidden">Windows</span></a>
-            </li>
-          </ul>
-          <p class="promo__details">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
+
       </section>
 
       <section class="advantages">

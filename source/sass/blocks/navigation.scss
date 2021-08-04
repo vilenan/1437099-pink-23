@@ -1,5 +1,17 @@
 .navigation__list {
   @include reset;
+
+  @media(min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.navigation__item {
+  @media(min-width: $desktop-width) {
+    margin-right: 78px;
+  }
+
 }
 
 .navigation__link {

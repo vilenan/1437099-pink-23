@@ -2,6 +2,11 @@
   font-weight: light;
   font-size: 24px;
   line-height: 28px;
-  margin: 0;
   text-align: center;
+  padding: 0 26px;
+
+  @media (min-width: $table-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
