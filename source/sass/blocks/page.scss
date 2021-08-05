@@ -7,10 +7,12 @@
 }
 
 .page__body {
+  min-height: 100%;
   margin: 0;
   padding: 0;
   color: $color-main;
   background-color: $white;
   min-width: 320px;
   box-sizing: border-box;
+  position: relative;
 }

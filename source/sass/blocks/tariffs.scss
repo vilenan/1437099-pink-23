@@ -7,3 +7,36 @@
   color: $white;
   text-align: center;
 }
+
+.tariffs__list {
+  @media (min-width: $table-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.tariffs__options-list {
+  display: none;
+
+  @media (min-width: $table-width) {
+    display: flex;
+  }
+}
+
+.tariffs__item {
+  @media (min-width: $table-width) {
+    display: flex;
+  }
+}
+
+.tariffs__option-name {
+  @media (min-width: $table-width) {
+    display: none;
+  }
+}
+
+.tariffs__breadcrumbs {
+  @media (min-width: $table-width) {
+    display: none;
+  }
+}

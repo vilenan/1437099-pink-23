@@ -5,11 +5,10 @@
 }
 
 .slider__item {
-  width: 100%;
   display: none;
 
   &--current {
-    display: table;
+    display: block;
   }
 }
 

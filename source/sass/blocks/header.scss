@@ -1,4 +1,21 @@
 .header {
-  background-color: $black-lighten;
+  background-color: $color-main;
   color: $white;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.header__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__logo-image {
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  fill: $white;
 }
