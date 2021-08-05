@@ -1,15 +1,13 @@
 .header {
-  // background-color: $black-lighten;
   background-color: $color-main;
   color: $white;
-
-  // position: absolute;
-  // z-index: 1;
-
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 }
 
 .header__wrapper {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }

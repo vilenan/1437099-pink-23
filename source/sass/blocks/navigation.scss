@@ -1,17 +1,17 @@
 .navigation__list {
   @include reset;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -78px;
   }
 }
 
 .navigation__item {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-right: 78px;
   }
-
 }
 
 .navigation__link {
@@ -25,4 +25,9 @@
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    text-transform: capitalize;
+  }
 }
