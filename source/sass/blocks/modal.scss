@@ -1,0 +1,20 @@
+.modal {
+  &--error {
+    padding-top: 49px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: 30px;
+  list-style: 40px;
+}

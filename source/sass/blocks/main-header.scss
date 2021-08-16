@@ -1,0 +1,35 @@
+.main-header {
+  color: $white;
+  background-color: $color-main;
+  background-image: url("../img/promo-background-mobile.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/promo-background-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/promo-background-desktop.jpg");
+  }
+}
+
+.main-header__title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 190px;
+    padding-bottom: 74px;
+    width: 520px;
+  }
+}

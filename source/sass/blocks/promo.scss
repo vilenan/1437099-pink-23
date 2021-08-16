@@ -3,7 +3,7 @@
   color: $white;
   position: relative;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/promo-background-tablet.jpg");
     background-position-x: center;
     background-position-y: bottom;
@@ -19,14 +19,14 @@
 .promo__wrapper {
   padding-bottom: 38px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 119px;
     position: relative;
   }
 }
 
 .promo__text {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     width: 340px;
   }
 }
@@ -40,7 +40,7 @@
   margin-left: -20px;
   margin-right: -20px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     background-image: none;
     background-color: transparent;
     padding-top: 212px;
@@ -57,7 +57,7 @@
 }
 
 .promo__image {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;
     right: 0;

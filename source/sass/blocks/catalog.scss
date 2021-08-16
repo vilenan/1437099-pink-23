@@ -1,6 +1,44 @@
+.catalog__intro {
+  padding-top: 54px;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 97px;
+  }
+}
+
+.catalog__text {
+  text-align: center;
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
 .catalog__list {
   @include reset;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 }
 
 .catalog__item:not(:last-child) {
