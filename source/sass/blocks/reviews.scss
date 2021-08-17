@@ -13,21 +13,36 @@
   line-height: 30px;
   margin-top: 50px;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     order: 2;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    font-size: 24px;
   }
 }
 
 .reviews__author-details {
   display: none;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     order: 3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
   }
 }
 
 .reviews__text {
+  font-weight: normal;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }

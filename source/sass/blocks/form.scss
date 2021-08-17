@@ -1,6 +1,134 @@
+.form {
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+}
+
+.form__intro {
+  padding-top: 54px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 92px 95px;
+  }
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__text {
+  text-align: center;
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.form__sub-text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
 .form__section {
   @include reset;
   border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+
+  &--user {
+    order: 1;
+  }
+
+  &--contasts {
+    order: 3;
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/-1;
+    }
+  }
+
+  &--emotions {
+    order: 5;
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/-1;
+    }
+  }
+
+  &--button {
+    order: 6;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+
+.form__section-wrapper {
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  &--achievements {
+    order: 2;
+
+    @media (min-width: $tablet-width) {
+      order: 4;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/-1;
+    }
+  }
+
+  &--apps {
+    order: 4;
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+  }
 }
 
 .form__legend {
@@ -9,14 +137,29 @@
   font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
+
+  &--contacts {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline-block;
+    }
+  }
 }
 
-.form__section-wrapper {
-  background-color: $grey;
+.form__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .form__input-label {
   font-weight: normal;
+  margin-right: 20px;
 }
 
 .form__input-label--text {
@@ -29,6 +172,17 @@
 .form__input-label--checkbox {
   font-size: 18px;
   line-height: 30px;
+}
+
+.form__input-text {
+  padding: 13px 20px;
+  border: 2px solid $grey-dark-input;
+  border-radius: 1px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-main;
+  flex-grow: 1;
 }
 
 .form__button {

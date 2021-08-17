@@ -2,10 +2,14 @@
   margin-top: 46px;
 }
 
+.contacts__slogan {
+  margin: 0;
+}
+
 .contacts__list {
   text-align: center;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -16,7 +20,7 @@
 }
 
 .contacts__item--addres {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1/3;
   }
 

@@ -9,7 +9,7 @@
 }
 
 .tariffs__list {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -18,25 +18,25 @@
 .tariffs__options-list {
   display: none;
 
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
 .tariffs__item {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
 .tariffs__option-name {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .tariffs__breadcrumbs {
-  @media (min-width: $table-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
