@@ -28,8 +28,8 @@
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html"> фотографии</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__item--current">конкурс</a>
+          <li class="navigation__item navigation__item--current">
+            <a class="navigation__link">конкурс</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML academy</a>
@@ -50,16 +50,16 @@
 
       <section class="form">
         <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
-        <div class="container">
+
           <div class="form__intro">
             <p class="form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
               <span class="form__sub-text">Пожалуйста, заполните форму ниже:</span>
             </p>
           </div>
-        </div>
-        <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__section form__section--user">
 
+        <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="post">
+
+          <fieldset class="form__section form__section--user">
               <p class="form__item">
                 <label class="form__input-label form__input-label--text" for="surname">фамилия:</label><br>
                 <input class="form__input-text" type="text" id="surname" name="user-surname" value="Укажите фамилию *" required>
@@ -72,10 +72,9 @@
                 <label class="form__input-label form__input-label--text" for="patronymic">отчество:</label><br>
                 <input class="form__input-text" type="text" id="patronymic" name="user-patronymic" value="Ну и отчество тоже">
               </p>
-
           </fieldset>
+
           <div class="form__section-wrapper form__section-wrapper--achievements">
-            <div class="container">
               <fieldset class="form__section form__section--achievements">
                 <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
                 <p class="form__item">
@@ -103,10 +102,9 @@
                   <label class="form__input-label form__input-label--checkbox" for="hotel">Разгромил отель</label>
                 </p>
               </fieldset>
-            </div>
           </div>
+
           <fieldset class="form__section form__section--contasts">
-            <div class="container">
               <legend class="form__legend form__legend--contacts">Контактная информация</legend>
               <p class="form__item">
                 <label class="form__input-label form__input-label--text" for="phone">Номер телефона</label><br>
@@ -116,8 +114,8 @@
                 <label class="form__input-label form__input-label--text" for="email">Адрес почты</label><br>
                 <input class="form__input-text" type="email" id="email" name="user-email" value="Введите почту *" required>
               </p>
-            </div>
           </fieldset>
+
           <div class="form__section-wrapper form__section-wrapper--apps">
             <fieldset class="form__section form__section--app">
               <legend class="form__legend">С каким приложением путешествовали?</legend>
@@ -135,12 +133,12 @@
               </p>
             </fieldset>
           </div>
+
           <fieldset class="form__section form__section--emotions">
-            <div class="container">
               <legend class="form__legend">Опишите свои эмоции</legend>
               <textarea class="form__input-text" name="review" id="user-review" cols="20" rows="5" aria-label="опишите свои эмоции от использования приложения" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </div>
           </fieldset>
+
           <div class="form__section form__section--button">
               <button class="form__button button" type="submit" aria-label="Отправить форму">отправить форму</button>
               <p class="form__footnote"><sup>*</sup>&nbsp;—&nbsp;Обязательные поля</p>
