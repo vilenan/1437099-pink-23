@@ -17,6 +17,29 @@
   }
 }
 
+.footer__logo-link {
+  &:hover .footer__logo-pink {
+    fill: $color-accent;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .footer__logo-pink {
+    fill: $color-main;
+  }
+}
+
+.footer__logo-glasses {
+  margin-right: 12px;
+  fill: $color-accent;
+}
+
+.footer__logo-pink {
+  fill: $color-main;
+}
+
 .footer__socials {
   margin-top: 41px;
   margin-bottom: 41px;
