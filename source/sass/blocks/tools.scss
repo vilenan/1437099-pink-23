@@ -1,0 +1,19 @@
+.tools__list {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.tools__item {
+  border: none;
+  padding: 0;
+  fill: $color-main-lighten;
+
+  &--active {
+    fill: $color-accent;
+  }
+}

@@ -61,11 +61,11 @@
   padding-bottom: 15px;
   fill: $white;
 
-  &[href]:hover {
+  &:hover {
     fill: $color-accent;
   }
 
-  &[href]:active {
+  &:active {
     fill: $white;
     opacity: 0.3;
   }
@@ -171,8 +171,7 @@
 
 .header__nav-item {
   border-bottom: 1px solid $black;
-  border-top: 1px solid fade($white, 15%);
-  // border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid $white-darkest;
 
   @media (min-width: $desktop-width) {
     border: none;
