@@ -1,6 +1,6 @@
 .advantages {
   overflow: hidden;
-  background-image: linear-gradient(175deg, $white 30%, $grey 30%);
+  background-image: linear-gradient(175deg, $white 23%, $grey 23%);
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(175deg, $white 35%, $grey 35%);
@@ -25,8 +25,8 @@
 }
 
 .advantages__intro {
-  padding-top: 16px;
-  padding-bottom: 70px;
+  padding-top: 10px;
+  padding-bottom: 96px;
 
   @media (min-width: $tablet-width) {
     padding-top: 58px;
@@ -35,7 +35,7 @@
 }
 
 .advantages__slogan {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
