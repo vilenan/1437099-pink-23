@@ -76,34 +76,45 @@
 
 .advantages__item {
   @media (min-width: $desktop-width) {
-    &::before {
+    &--stage1::before {
       content: "";
       position: absolute;
       width: 300px;
       height: 382px;
-    }
-
-    &--stage1 {
-      background-image: url("../img/advantages-icon-1-desktop.png");
       background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url("../img/advantages-icon-1-desktop.png");
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/advantages-icon-1-desktop@2x.png");
       }
     }
 
-    &--stage2 {
-      background-image: url("../img/advantages-icon-2-desktop.png");
+    &--stage2::before {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 382px;
       background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url("../img/advantages-icon-2-desktop.png");
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/advantages-icon-2-desktop@2x.png");
       }
     }
 
-    &--stage3 {
-      background-image: url("../img/advantages-icon-3-desktop.png");
+    &--stage3::before {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 382px;
       background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url("../img/advantages-icon-3-desktop.png");
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/advantages-icon-3-desktop@2x.png");
