@@ -5,6 +5,23 @@
   align-items: center;
 }
 
+.reviews__list {
+  @media (min-width: $desktop-width) {
+    padding-top: 193px;
+    padding-left: 124px;
+    padding-right: 124px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 79px;
+      height: 63px;
+      background-image: url("../img/quotes.svg");
+      top: 72px;
+    }
+  }
+}
+
 .reviews__author-name {
   font-weight: bold;
   font-style: normal;

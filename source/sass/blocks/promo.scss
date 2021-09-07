@@ -9,10 +9,18 @@
     background-position-y: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/promo-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/promo-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -39,6 +47,10 @@
   padding-top: 90px;
   margin-left: -20px;
   margin-right: -20px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-background-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background-image: none;
