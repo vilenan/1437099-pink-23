@@ -287,15 +287,15 @@
 }
 
 .form__input-checkbox {
-  &:hover+.form__input-label--checkbox::before {
+  &:hover + .form__input-label--checkbox::before {
     border: 2px solid $color-main;
   }
 
-  &:active+.form__input-label--checkbox::before {
+  &:active + .form__input-label--checkbox::before {
     border: 2px solid $color-accent;
   }
 
-  &:checked+.form__input-label--checkbox::before {
+  &:checked + .form__input-label--checkbox::before {
     background-image: url("../../img/yes_form.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -303,15 +303,15 @@
 }
 
 .form__input-radio {
-  &:hover+.form__input-label--radio::before {
+  &:hover + .form__input-label--radio::before {
     border: 2px solid $color-main;
   }
 
-  &:active+.form__input-label--radio::before {
+  &:active + .form__input-label--radio::before {
     border: 2px solid $color-accent;
   }
 
-  &:checked+.form__input-label--radio::after {
+  &:checked + .form__input-label--radio::after {
     content: "";
     position: absolute;
     width: 15px;
