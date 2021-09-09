@@ -7,6 +7,16 @@
   }
 }
 
+.advantages__content {
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+    margin-top: 300px;
+    background-color: $grey;
+    position: relative;
+    z-index: 10;
+  }
+}
+
 .advantages__title {
   font-weight: bold;
   color: $black;
@@ -19,7 +29,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 450px;
     text-align: center;
   }
 }
