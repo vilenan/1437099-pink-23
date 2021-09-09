@@ -183,6 +183,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+
+    &--contacts {
+      flex-direction: column;
+    }
   }
 }
 
