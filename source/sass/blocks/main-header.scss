@@ -6,7 +6,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-
   @media (min-width: $tablet-width) {
     background-image: url("../img/promo-background-tablet.jpg");
   }
@@ -17,13 +16,20 @@
 }
 
 .main-header__title {
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 33px;
   margin: 0 auto;
   text-align: center;
   padding-top: 96px;
-  padding-bottom: 45px;
+
+  &--catalog {
+    padding-bottom: 80px;
+  }
+
+  &--form {
+    padding-bottom: 45px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 50px;

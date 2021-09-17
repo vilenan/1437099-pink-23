@@ -3,6 +3,8 @@
   position: relative;
   padding-bottom: 34px;
   padding-top: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &--active {
     display: block;
@@ -20,6 +22,7 @@
       background-repeat: no-repeat;
       background-size: contain;
       left: 0;
+      top: 20px;
     }
 
     &--crop::before {
@@ -42,6 +45,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 40px;
+    padding-left: 90px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-main-lightest;
+    }
+
     &--crop::before {
       width: 44px;
       height: 44px;

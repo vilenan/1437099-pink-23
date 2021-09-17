@@ -1,3 +1,33 @@
+.card--special {
+  position: relative;
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.card__marker {
+  position: absolute;
+  background-color: $color-accent;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 6px 20px;
+  right: 20px;
+
+  @media (min-width: $tablet-width) {
+    right: 40px;
+    top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 130px;
+    top: 54px;
+  }
+}
+
 .card__author {
   font-weight: bold;
   font-size: 14px;
@@ -12,19 +42,65 @@
 }
 
 .card__rating {
+  position: relative;
   text-transform: uppercase;
   color: $color-accent;
   font-size: 12px;
   line-height: 24px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    order: 3;
+    margin-left: auto;
+    padding-right: 38px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/heart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      right: 0;
+      left: auto;
+    }
+  }
 }
 
 .card__content {
   background-color: $grey;
-  padding: 17px 25px 10px;
+  padding: 15px 15px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 25px 25px;
+
+    &--special {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  // @media (min-width: $desktop-width) {
+  //   min-height: 155px;
+  //   }
 }
 
 .card__image img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+.card__caption {
+  order: 4;
+  margin: 0;
+  margin-bottom: 10px;
 }
